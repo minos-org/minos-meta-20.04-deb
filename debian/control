@@ -1,0 +1,110 @@
+Source: minos-meta
+Section: metapackages
+Priority: optional
+Maintainer: Javier López <m@javier.io>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://minos.io/
+Vcs-Git: git://github.com/minos-org/minos-meta-deb.git
+Vcs-Browser: https://github.com/minos-org/minos-meta-deb.git
+
+Package: minos-core
+Architecture: any
+Pre-Depends: git, tmux, vim-nox | vim-gnome | vim-gtk | vim-gtk3
+Depends: ${misc:Depends},
+ bash-completion,
+ bash-minos-settings,
+ command-not-found,
+ curl,
+ exuberant-ctags,
+ gdebi-core,
+ htop,
+ libpam-captcha,
+ minos-core-settings,
+ minos-core-tools,
+ mosh,
+ ncurses-bin,
+ ncurses-term,
+ rsync,
+ silversearcher-ag,
+ wcd,
+Description: Minos core
+ This is Minos, a Linux based OS with focus in simplicity, elegancy and
+ stability, primarily targeted at advanced users and developers.
+ .
+ Minos identity for servers and cli based systems.
+
+Package: minos-desktop
+Architecture: any
+Depends: ${misc:Depends},
+ acpi,
+ alsa-base,
+ alsa-utils,
+ autocutsel,
+ compton,
+ conky-cli,
+ dbus-x11,
+ dmenu,
+ feh,
+ ffcast,
+ firefox28,
+ firefox28-minos-settings,
+ firefox-flashplugin,
+ genpass,
+ geoclue-ubuntu-geoip,
+ gnupg-agent,
+ gtk2-engines-pixbuf,
+ gvfs,
+ gvfs-backends,
+ gxmessage,
+ i3lock,
+ i3-wm,
+ irssi,
+ lame,
+ libdvdread4,
+ libmad0,
+ libnotify-bin,
+ lxappearance,
+ magnifier,
+ minos-artwork,
+ minos-core,
+ minos-desktop-settings,
+ minos-desktop-tools,
+ mpc,
+ mpd,
+ mplayer,
+ mutt,
+ ncmpcpp,
+ notify-osd,
+ pcmanfm,
+ plymouth-theme-minos-comet,
+ pm-utils,
+ policykit-1,
+ realvncviewer507,
+ redshift,
+ rlpr,
+ rxvt-unicode-256color,
+ scrot,
+ slim,
+ slim-theme-minos-login,
+ sxiv,
+ ubuntu-drivers-common,
+ udisks2,
+ umplayer,
+ unrar,
+ unzip,
+ util-linux,
+ vim-gtk,
+ xarchiver,
+ xbacklight,
+ xclip,
+ xdg-utils,
+ xdotool,
+ xorg,
+ zathura,
+ zram-config,
+Description: Minos desktop
+ This is Minos, a Linux based OS with focus in simplicity, elegancy and
+ stability, primarily targeted at advanced users and developers.
+ .
+ Minos identity for desktop systems.
