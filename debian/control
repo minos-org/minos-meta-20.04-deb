@@ -36,6 +36,7 @@ Description: Minos core
 
 Package: minos-desktop
 Architecture: any
+Pre-Depends: initramfs-tools
 Depends: ${misc:Depends},
  acpi,
  alsa-base,
