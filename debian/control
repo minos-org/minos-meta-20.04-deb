@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/minos-org/minos-meta-deb.git
 
 Package: minos-core
 Architecture: any
-Pre-Depends: git, tmux, vim-nox | vim-gnome | vim-gtk | vim-gtk3
+Pre-Depends: git, tmux-2.8, vim-nox | vim-gnome | vim-gtk | vim-gtk3
 Depends: ${misc:Depends},
  bash-completion,
  bash-minos-settings,
